@@ -1,51 +1,116 @@
-/* Contact Page Styles */
-.contact-container {
-    width: 60%;
-    max-width: 700px;
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: linear-gradient(to right, #007bff, #6610f2);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* About Page */
+.about-container {
+    width: 70%;
+    max-width: 900px;
     margin: 50px auto;
     text-align: center;
     background: white;
     padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-.contact-container h2 {
+.about-container h2 {
+    font-size: 32px;
     color: #007bff;
-    font-size: 28px;
-    margin-bottom: 10px;
 }
 
-.contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-}
-
-.contact-form textarea {
-    height: 150px;
-    resize: none;
-}
-
-.contact-form button {
-    background: #007bff;
-    color: white;
-    border: none;
-    padding: 12px;
+.about-container p {
     font-size: 18px;
-    border-radius: 5px;
-    cursor: pointer;
+    line-height: 1.6;
 }
 
-.contact-form button:hover {
-    background: #0056b3;
+/* Team Section */
+.team-container {
+    width: 80%;
+    max-width: 1000px;
+    margin: 50px auto;
+    text-align: center;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.team-container h2 {
+    font-size: 32px;
+    color: #007bff;
+}
+
+.team {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    text-align: center;
+    width: 300px;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #007bff;
+}
+
+.team-member h3 {
+    margin: 10px 0 5px;
+    font-size: 22px;
+}
+
+.team-member p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #333;
+    color: white;
+    margin-top: 30px;
 }
