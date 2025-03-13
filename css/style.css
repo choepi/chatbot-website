@@ -1,56 +1,51 @@
-/* Chat Container */
-.chat-container {
+/* Contact Page Styles */
+.contact-container {
     width: 60%;
-    max-width: 800px;
+    max-width: 700px;
     margin: 50px auto;
+    text-align: center;
     background: white;
-    padding: 20px;
+    padding: 30px;
     border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Chatbox */
-.chatbox {
-    height: 400px;
-    overflow-y: scroll;
-    padding: 10px;
-    border: 1px solid #ccc;
-    background: #f9f9f9;
+.contact-container h2 {
+    color: #007bff;
+    font-size: 28px;
+    margin-bottom: 10px;
 }
 
-/* Chat Messages */
-.bot-message {
-    background: #007bff;
-    color: white;
-    padding: 10px;
-    border-radius: 10px;
-    margin: 5px 0;
-    display: inline-block;
-}
-
-/* Chat Input */
-.chat-input {
+.contact-form {
     display: flex;
-    margin-top: 10px;
+    flex-direction: column;
+    gap: 15px;
 }
 
-.chat-input input {
-    flex: 1;
-    padding: 10px;
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    font-size: 16px;
 }
 
-.chat-input button {
-    padding: 10px 15px;
-    margin-left: 10px;
+.contact-form textarea {
+    height: 150px;
+    resize: none;
+}
+
+.contact-form button {
     background: #007bff;
     color: white;
     border: none;
-    cursor: pointer;
+    padding: 12px;
+    font-size: 18px;
     border-radius: 5px;
+    cursor: pointer;
 }
 
-.chat-input button:hover {
+.contact-form button:hover {
     background: #0056b3;
 }
