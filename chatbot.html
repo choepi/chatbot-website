@@ -1,0 +1,19 @@
+<h2>Try Our Chatbot</h2>
+<div class="chat-container">
+    <div id="chatbox"><p class="bot-message">Hello! How can I assist you today?</p></div>
+    <input type="text" id="userInput" placeholder="Type your message...">
+    <button onclick="sendMessage()">Send</button>
+</div>
+
+<script>
+async function sendMessage() {
+    let userInput = document.getElementById("userInput").value;
+    let response = await fetch("http://127.0.0.1:5000/chat", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ "message": userInput })
+    });
+    let result = await response.json();
+    document.getElementById("chatbox").innerHTML += `<p class='bot-message'>${result.response}</p>`;
+}
+</script>
